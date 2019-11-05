@@ -49,6 +49,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem "letter_opener", "~> 1.7"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do
@@ -69,3 +71,5 @@ gem "table_print", "~> 1.5"
 gem "dotenv-rails", "~> 2.7"
 
 gem "devise", "~> 4.7"
+
+

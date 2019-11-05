@@ -1,5 +1,5 @@
 # README
 
-Bienvenue sur l'appli Eventbritte :
- 
+Bienvenue sur l'appli Eventbriitee :
+
 https://eventbriitee.herokuapp.com/

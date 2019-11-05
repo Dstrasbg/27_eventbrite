@@ -12,7 +12,7 @@
     <!-- Bootswatch SUPERHERO-->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-LS4/wo5Z/8SLpOLHs0IbuPAGOWTx30XSoZJ8o7WKH0UJhRpjXXTpODOjfVnNjeHu" crossorigin="anonymous">
 
-    <title>Eventbrite</title>
+    <title>Eventbriitee</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -25,7 +25,7 @@
       <!-- Navigation bar-->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">EventBrute</a>
+    <a class="navbar-brand" href="#">EventBriitee</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,7 +38,6 @@
               <a class="nav-link" <%= link_to "Créer un événement", new_event_path %></a>
             </li> 
           </ul>
-
 
 
       <%if user_signed_in?%> 
@@ -57,7 +56,7 @@
                 
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            S'inscrire / Se conntecter
+            S'inscrire / Se connecter
           </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" <%= link_to "S'inscrire", new_user_registration_path %></a>
@@ -72,10 +71,6 @@
 
 
     <%= yield %>
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
