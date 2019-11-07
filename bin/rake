@@ -1,21 +1,21 @@
-#!/usr/bin/env ruby
-#begin
-#  load File.expand_path('../spring', __FILE__)
-#rescue LoadError => e
-#  raise unless e.message.include?('spring')
-#end
-#require_relative '../config/boot'
-#require 'rake'
-#Rake.application.run
-
+!/usr/bin/env ruby
 begin
-  require "rspec/core/rake_task"
-
-  desc "Run all examples"
-
-  RSpec::Core::RakeTask.new(:spec) do |t|
-    t.rspec_opts = %w[--color]
-    t.pattern = 'spec/**/*_spec.rb'
-  end
-rescue LoadError
+  load File.expand_path('../spring', __FILE__)
+rescue LoadError => e
+  raise unless e.message.include?('spring')
 end
+require_relative '../config/boot'
+require 'rake'
+Rake.application.run
+
+#begin
+#  require "rspec/core/rake_task"#
+
+#  desc "Run all examples"
+#
+ # RSpec::Core::RakeTask.new(:spec) do |t|
+  #  t.rspec_opts = %w[--color]
+#    t.pattern = 'spec/**/*_spec.rb'
+#  end
+#rescue LoadError
+#end
